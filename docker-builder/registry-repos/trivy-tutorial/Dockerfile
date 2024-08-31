@@ -1,4 +1,4 @@
-FROM debian:stretch-20210208-slim
+FROM debian:bookworm-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 
