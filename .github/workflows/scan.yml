@@ -42,7 +42,7 @@ jobs:
 
       - name: Install Trivy
         run: |
-          ## Run install script at trivy-tutorial/install.sh
+          ## Run install script at trivy-tutorial-main/install.sh
           bash install.sh
 
       - name: Execute Trivy Scans
