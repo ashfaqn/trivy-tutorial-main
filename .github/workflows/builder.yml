@@ -54,7 +54,7 @@ jobs:
           ## This user is given "admin" permissions so they can bypass
           ## the branch protection rules and commit the Docker Image Signature DIRECTLY into the main branch
           ## Setup instructions: https://github.com/zachroofsec-org/trivy-tutorial#github-action-setup-instructions-advanced
-          token: ${{ secrets.GIT_AUTOMATION_USER_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Install Trivy
         run: |
