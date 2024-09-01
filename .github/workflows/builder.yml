@@ -44,6 +44,11 @@ jobs:
   docker-registry-orchestrator:
     name: Docker Registry Orchestrator
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write  # Allows pushing to the repository
+      issues: write  # Allows creating and commenting on issues
+      pull-requests: write  # Allows creating and commenting on PRs
+
     steps:
       ## Allow access to trivy-tutorial Git repo
       - name: Checkout current git repo
